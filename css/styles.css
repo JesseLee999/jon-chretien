@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn:400,700,900");
 
 @font-face {
     font-family: Helvetica;
@@ -11,18 +11,16 @@
   max-width: 1240px;
   margin: 0 auto;
   float: none;
-  padding: 0 40px;
+  padding: 0 60px;
   height: auto;
 }
 body {
   background-color: #101a24;
   text-align: center;
-  line-height: 1.5;
   width: auto;
-  padding: 56px;
 }
 .line {
-  border-top: 13px solid #3a3a3a;
+  border-top: 13px solid hsla(0,0%,100%,.25);
   padding: 0;
   margin: 0;
 }
@@ -40,7 +38,7 @@ header {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  padding-top: 10px;
+  margin-top: 22px;
 }
 
 h1 {
@@ -50,15 +48,13 @@ h1 {
   color: white;
   text-align: center;
   margin: 0;
-  padding-top: 15px;
 }
 
 .main {
   color: #ccc;
-  font-family: "Vollkorn" , serif;
+  font-family: "Vollkorn";
   font-size: 34px;
   font-weight: 400;
-  line-height: 1.2;
   letter-spacing: 0.2px;
   padding: 0 32px;
 }
@@ -68,30 +64,28 @@ h1 {
 a {
   color: #FFFF33;
   text-decoration: none;
+  transition: color .2s ease, opacity .3s ease;
 }
 a:hover {
   color: #aaa;
-  transition: color .2s ease;
-  text-decoration: none;
-  top: 0;
-  left: 0;
   opacity:0.7;
+  text-decoration: none;
 }
+
 
 /* Line borders */
 
 .border-1 {
-  padding-bottom: 72px;
-  border-bottom: 3px double #666;
+  padding-bottom: 75px;
+  border-bottom: 3px double hsla(0,0%,100%,.25);
   max-width: 1252px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .border-2 {
   padding-bottom: 34px;
-  padding-top: 34px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid hsla(0,0%,100%,.25);
   max-width: 1252px;
   margin-left: auto;
   margin-right: auto;
@@ -100,8 +94,7 @@ a:hover {
 /* Containers in Sub-Main container */
 
 section {
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-top: 23px;
 }
 
 /* container 1 */
@@ -122,7 +115,7 @@ section {
   max-width: 400px;
   line-height: 1.35em;
   text-align: left;
-  font-family: "Vollkorn" , serif;
+  font-family: "Vollkorn";
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 4px;
@@ -141,12 +134,11 @@ section {
   padding: 0;
   object-fit: cover;
 }
-.grid-container-2 img:hover {
-  transition: color .2s ease;
-  text-decoration: none;
-  top: 0;
-  left: 0;
-  opacity:0.7;
+.grid-container-2 img {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
 }
 .grid-item2 {
   grid-column-start: 1;
@@ -181,9 +173,9 @@ p {
 }
 h2 {
   color: white;
-  font-family: "Vollkorn" , serif;
+  font-family: "Vollkorn";
   font-size: 47px;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 10px;
 }
 h6 {
@@ -421,7 +413,7 @@ nav li {
   .main {
     color: #ccc;
     font-family: "Vollkorn" , serif;
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0.2px;
